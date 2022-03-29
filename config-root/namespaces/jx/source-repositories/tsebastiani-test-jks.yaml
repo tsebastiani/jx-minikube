@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: tsebastiani
+    provider: github
+    repository: test-jks
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: tsebastiani-test-jks
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/tsebastiani/test-jks.git
+  org: tsebastiani
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: test-jks
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/tsebastiani/test-jks
