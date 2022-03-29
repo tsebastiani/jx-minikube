@@ -11,3 +11,5 @@ kaniko:
   # lets support insecure docker registries so that we
   # can use the local docker-registry chart
   flags: "--insecure"
+
+
